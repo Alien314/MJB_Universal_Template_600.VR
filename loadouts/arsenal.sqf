@@ -88,6 +88,8 @@ private _aceMedLoaded = !(isNil "ace_medical_engine"); //Store whether ace med i
 private _winter = false; // true to enable winter camo
 private _enableCBRN = false; // true to enable CBRN
 
+// !!paste limit!!
+
 private _rejoincheck = player getVariable ["startpos",nil];
 if (isNil "_rejoincheck") then {
     player setVariable ["startpos", getPosASL player, true];};
@@ -934,6 +936,9 @@ private _itemMod =
     //Bipod & Foregrips
     //============================================================
     "CUP_bipod_Harris_1A2_L_BLK",
+    "CUP_bipod_VLTOR_Modpod_black",
+    "CUP_bipod_VLTOR_Modpod_od",
+    "CUP_bipod_VLTOR_Modpod",
     "cup_bipod_sa58",
 
     "rhsusf_acc_grip2",
@@ -2217,7 +2222,7 @@ private _itemWeaponAR =
     //LMG Accessories
     //============================================================
 
-	"CUP_optic_ElcanM145",
+	//"CUP_optic_ElcanM145",
     "rhsusf_acc_elcan",
     "rhsusf_acc_elcan_ard"
 ];
@@ -2313,6 +2318,8 @@ private _itemSniper =
 
 	//sling for defense
 	"tsp_sling",
+	"tsp_sling_1point",
+	"tsp_sling_lanyard",
 
     // "optic_AMS", // marksman dlc
     "optic_LRPS",
@@ -2418,10 +2425,12 @@ private _itemWeaponGL =
     //============================================================
     //Primary Weapons
     //============================================================
-    //Grenade Launchers and Sling
+    //Grenade Launchers and Slings
 	"CUP_glaunch_Mk13",
 	"CUP_glaunch_M79",
 	"tsp_sling",
+	"tsp_sling_1point",
+	"tsp_sling_lanyard",
 
 	//5.56x45mm
     "arifle_Mk20_GL_plain_F",
@@ -2710,7 +2719,7 @@ private _itemWeaponMMG =
 
     "cup_optic_hensoldtzo",
     "cup_optic_acog2",
-    "CUP_optic_ACOG_TA648_308_Black",
+	"CUP_optic_ACOG_TA648_308_Black",
 
     "rhsusf_acc_su230",
     "rhsusf_acc_su230_mrds",
@@ -3224,7 +3233,8 @@ if (_hasApex) then {
         "optic_Hamr_khk_F",
         "optic_ERCO_blk_F",
         "optic_ERCO_khk_F",
-        "optic_ERCO_snd_F"
+        "optic_ERCO_snd_F",
+        "bipod_01_F_khk"
     ];
 } else {
     _itemFacewear = _itemFacewear - [
@@ -3295,6 +3305,17 @@ if (_hasMarksmen) then {
         "MMG_01_tan_F",
         "MMG_02_black_F",
         "MMG_02_sand_F"
+    ];
+
+    _itemMod append [
+        "bipod_03_F_blk",
+        "bipod_02_F_blk",
+        "bipod_01_F_blk",
+        "bipod_02_F_hex",
+        "bipod_01_F_mtp",
+        "bipod_03_F_oli",
+        "bipod_01_F_snd",
+        "bipod_02_F_tan"
     ];
 
     _itemSniper pushBack "optic_AMS";
