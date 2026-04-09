@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=316;
+		nextID=318;
 	};
 	class Camera
 	{
@@ -322,19 +322,6 @@ class CustomAttributes
 		name="TMF_ORBAT_Settings";
 		class Attribute0
 		{
-			property="TMF_ORBATTracker";
-			expression="false";
-			class Value
-			{
-				class data
-				{
-					singleType="BOOL";
-					value=0;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="TMF_ORBATTrackerCondition";
 			expression="false";
 			class Value
@@ -343,6 +330,19 @@ class CustomAttributes
 				{
 					singleType="STRING";
 					value="true";
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="TMF_ORBATTracker";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					singleType="BOOL";
+					value=0;
 				};
 			};
 		};
@@ -418,7 +418,7 @@ class CustomAttributes
 		};
 		nAttributes=2;
 	};
-	class Category5
+	class Category4
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -460,7 +460,7 @@ class CustomAttributes
 		};
 		nAttributes=2;
 	};
-	class Category6
+	class Category5
 	{
 		name="Scenario";
 		class Attribute0
@@ -7398,7 +7398,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -8959,7 +8959,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -9958,7 +9958,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -11367,7 +11367,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -12379,7 +12379,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -13789,7 +13789,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -14788,7 +14788,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -16198,7 +16198,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -18043,7 +18043,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -19902,7 +19902,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -44412,7 +44412,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -46012,7 +46012,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -47011,7 +47011,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -48421,7 +48421,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -49433,7 +49433,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -50843,7 +50843,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -51842,7 +51842,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -53265,7 +53265,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -55111,7 +55111,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -56970,7 +56970,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -81888,7 +81888,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -83475,7 +83475,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -84474,7 +84474,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -85884,7 +85884,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -86896,7 +86896,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -88306,7 +88306,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -89305,7 +89305,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -90728,7 +90728,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -92561,7 +92561,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
@@ -94420,7 +94420,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Trooper";
+						description="Grenadier";
 						isPlayable=1;
 						class Inventory
 						{
