@@ -20,18 +20,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=318;
+		nextID=320;
 	};
 	class Camera
 	{
-		pos[]={3996.5173,58.553703,4417.1313};
-		dir[]={-0.88840389,-0.45884538,0.018714368};
-		up[]={-0.45877367,0.88849676,0.0096649528};
-		aside[]={0.021060364,-4.9658411e-07,0.99985707};
+		pos[]={3917.7585,58.553703,4307.4341};
+		dir[]={-0.46547565,-0.88129693,-0.082457192};
+		up[]={-0.86775327,0.47261989,-0.15371843};
+		aside[]={-0.1744456,-1.4277175e-06,0.98474807};
 	};
 };
 binarizationWanted=0;
-sourceName="MJB_Universal_Template_600";
+sourceName="mjb_universal_template_600";
 addons[]=
 {
 	"A3_Modules_F_Curator_Curator",
@@ -322,19 +322,6 @@ class CustomAttributes
 		name="TMF_ORBAT_Settings";
 		class Attribute0
 		{
-			property="TMF_ORBATTrackerCondition";
-			expression="false";
-			class Value
-			{
-				class data
-				{
-					singleType="STRING";
-					value="true";
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="TMF_ORBATTracker";
 			expression="false";
 			class Value
@@ -343,6 +330,19 @@ class CustomAttributes
 				{
 					singleType="BOOL";
 					value=0;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="TMF_ORBATTrackerCondition";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					singleType="STRING";
+					value="true";
 				};
 			};
 		};
@@ -20971,7 +20971,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="G1";
-						description="Weapons Team Leader@Golf 1 Weapons Team";
+						description="Weapons TL/MAT Assistant@Golf 1 Weapons Team";
 						isPlayable=1;
 					};
 					id=26582;
@@ -21912,7 +21912,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="G2";
-						description="Weapons Team Leader@Golf 2 Weapons Team";
+						description="Weapons TL/MAT Assistant@Golf 2 Weapons Team";
 						isPlayable=1;
 					};
 					id=26589;
@@ -58025,7 +58025,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="G1_2";
-						description="Weapons Team Leader@Golf 1 Weapons Team";
+						description="Weapons TL/MAT Assistant@Golf 1 Weapons Team";
 						isPlayable=1;
 					};
 					id=26841;
@@ -58953,7 +58953,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="G2_2";
-						description="Weapons Team Leader@Golf 2 Weapons Team";
+						description="Weapons TL/MAT Assistant@Golf 2 Weapons Team";
 						isPlayable=1;
 					};
 					id=26848;
@@ -95488,7 +95488,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="G1_1";
-						description="Weapons Team Leader@Golf 1 Weapons Team";
+						description="Weapons TL/MAT Assistant@Golf 1 Weapons Team";
 						isPlayable=1;
 					};
 					id=27100;
@@ -96377,7 +96377,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="G2_1";
-						description="Weapons Team Leader@Golf 2 Weapons Team";
+						description="Weapons TL/MAT Assistant@Golf 2 Weapons Team";
 						isPlayable=1;
 					};
 					id=27107;
