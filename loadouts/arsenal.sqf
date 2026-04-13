@@ -2064,9 +2064,9 @@ if (_tracer isEqualTo 'red') then {
         "100Rnd_580x42_Mag_F",
         "100Rnd_580x42_ghex_Mag_F",
        	"100Rnd_580x42_hex_Mag_F",
-        "mjb_100_Rnd_580x42_Mag_Tracer_Red",
-        "mjb_100_Rnd_580x42_hex_Mag_Tracer_Red",
-        "mjb_100_Rnd_580x42_ghex_Mag_Tracer_Red",
+        "mjb_100Rnd_580x42_Mag_Tracer_Red",
+        "mjb_100Rnd_580x42_hex_Mag_Tracer_Red",
+        "mjb_100Rnd_580x42_ghex_Mag_Tracer_Red",
 
 		//Loose ammo
         "greenmag_ammo_580x42_basic_60Rnd",
