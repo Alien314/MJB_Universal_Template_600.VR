@@ -851,6 +851,14 @@ private _itemFacewear = (("getNumber (_x >> 'scope') isEqualTo 2" configClasses 
     "CUP_RUS_Balaclava_grn",
     "CUP_RUS_Balaclava_rgr",
 
+	//JCA
+	"JCA_G_AirPurifyingRespirator_03_black_clear_F",
+	"JCA_G_AirPurifyingRespirator_03_black_tinted_F",
+	"JCA_G_AirPurifyingRespirator_03_olive_clear_F",
+	"JCA_G_AirPurifyingRespirator_03_olive_tinted_F",
+	"JCA_G_AirPurifyingRespirator_03_sand_clear_F",
+	"JCA_G_AirPurifyingRespirator_03_sand_tinted_F",
+
     //RHS
     "rhs_balaclava"
 ];*/
@@ -3583,6 +3591,12 @@ if (_hasContact) then {
 
 if (!_enableCBRN) then {
     _itemFacewear = _itemFacewear - [
+		"JCA_G_AirPurifyingRespirator_03_black_clear_F",
+		"JCA_G_AirPurifyingRespirator_03_black_tinted_F",
+		"JCA_G_AirPurifyingRespirator_03_olive_clear_F",
+		"JCA_G_AirPurifyingRespirator_03_olive_tinted_F",
+		"JCA_G_AirPurifyingRespirator_03_sand_clear_F",
+		"JCA_G_AirPurifyingRespirator_03_sand_tinted_F",
 		"G_AirPurifyingRespirator_01_F",
 		"G_AirPurifyingRespirator_02_black_F",
 		"G_AirPurifyingRespirator_02_olive_F",
