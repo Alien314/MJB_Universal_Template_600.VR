@@ -18,7 +18,7 @@ Uncomment the relevant line(s) in `description.ext`, otherwise the loadouts from
 `description.ext` and .hpp files use C++ syntax. (Language -> C -> C++, in Notepad++)
 
 # Existing Missions/Merging
-THIS CAN BREAK SOME FUNCTIONALITY OF PLACED AI, RECOMMENDED TO SAVE THEM AS A COMPOSITION, REMOVE THEM, AND RE-PLACE AFTER MERGING.
+THIS CAN BREAK SOME FUNCTIONALITY OF PLACED AI, RECOMMENDED TO SAVE THEM AS A COMPOSITION, OR JUST REMOVE THEM, AND RE-PLACE AFTER MERGING.
 Open a renamed copy of this template in 3DEN Editor (terrain extension must match the merge source).  Scenario > Merge and choose your merge source mission. Any files from the source mission's folder will not be brought along, and have to be manually added to the new template mission you're merging into, or edited into the existing files from the template.
 
 # Init File Changes
