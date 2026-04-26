@@ -153,6 +153,7 @@ class basetrooper
 		#else
 		#endif
 		"ACE_CableTie",
+		"ACE_IR_Strobe_Item",
 		"greenmag_item_speedloader",
 		"ACE_RangeCard",
 		"ACE_MapTools"
@@ -276,8 +277,8 @@ class ar : basetrooper
 		#else
 			LIST_3("FirstAidKit"),
 		#endif
-		LIST_4("CUP_100Rnd_TE4_Yellow_Tracer_556x45_M249")
-		//LIST_3("greenmag_beltlinked_556x45_basic_200")
+		LIST_4("CUP_100Rnd_TE4_Yellow_Tracer_556x45_M249"),
+		LIST_3("greenmag_beltlinked_556x45_basic_200")
 	};
 };
 
