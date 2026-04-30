@@ -23,6 +23,7 @@ rats is also a preset. :)<br/>
 Don't forget fortify tools!
 ";
 _briefing = _briefing + _text;
-tmf_briefing_admin = tmf_briefing_admin + _text;
 
 player createDiaryRecord ["diary", ["Admin",_briefing]];
+
+tmf_briefing_admin = tmf_briefing_admin + _text;
