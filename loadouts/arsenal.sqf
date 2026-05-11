@@ -774,9 +774,16 @@ private _itemPackMedLight =
 
 private _itemPackMedium =
 [
+    "B_Carryall_blk",
 	"B_Carryall_cbr",
-    "B_Carryall_taiga_F",
     "B_Carryall_eaf_F",
+    "B_Carryall_green_F",
+    "B_Carryall_ocamo",
+    "B_Carryall_ghex_F",
+    "B_Carryall_taiga_F",
+    "B_Carryall_khk",
+    "B_Carryall_mcamo",
+    "B_Carryall_wdl_F",
     "B_Carryall_oli",
     "rhs_tortila_grey",
     "rhs_tortila_khaki",
@@ -1988,6 +1995,8 @@ private _itemWeaponAmmo =
     "SmokeShellRed",
     "SmokeShellPurple",
     "SmokeShellBlue",
+    "mjb_SmokeShellLightBlue",
+    "mjb_SmokeShellPink",
 
     //Make eyeballs hurt
     "tsp_flashbang_m84",
@@ -2058,7 +2067,13 @@ if (_tracer isEqualTo 'red') then {
         "CUP_50Rnd_570x28_Red_Tracer_P90_M",
 	    "CUP_40Rnd_46x30_MP7_Red_Tracer",
         "CUP_30Rnd_45ACP_Red_Tracer_M3A1_BLK_M",
-		"30Rnd_9x21_Mag_SMG_02_Tracer_Red"
+		"30Rnd_9x21_Mag_SMG_02_Tracer_Red",
+		"JCA_25Rnd_45ACP_UMP_Tracer_IR_Mag",
+		"JCA_25Rnd_45ACP_UMP_Tracer_IR_Sand_Mag",
+		"JCA_25Rnd_45ACP_UMP_Red_Mag",
+		"JCA_25Rnd_45ACP_UMP_Red_Sand_Mag",
+		"JCA_25Rnd_45ACP_UMP_Tracer_Red_Mag",
+		"JCA_25Rnd_45ACP_UMP_Tracer_Red_Sand_Mag"
 	];
 
 	_itemWeaponHighCapAmmo =
@@ -2224,7 +2239,13 @@ if (_tracer isEqualTo 'red') then {
         "CUP_50Rnd_570x28_Yellow_Tracer_P90_M",
         "CUP_40Rnd_46x30_MP7_Yellow_Tracer",
         "CUP_30Rnd_45ACP_Green_Tracer_M3A1_BLK_M",
-		"30Rnd_9x21_Mag_SMG_02_Tracer_Yellow"
+		"30Rnd_9x21_Mag_SMG_02_Tracer_Yellow",
+		"JCA_25Rnd_45ACP_UMP_Tracer_IR_Mag",
+		"JCA_25Rnd_45ACP_UMP_Tracer_IR_Sand_Mag",
+		"JCA_25Rnd_45ACP_UMP_Yellow_Mag",
+		"JCA_25Rnd_45ACP_UMP_Yellow_Sand_Mag",
+		"JCA_25Rnd_45ACP_UMP_Tracer_Yellow_Mag",
+		"JCA_25Rnd_45ACP_UMP_Tracer_Yellow_Sand_Mag"
 	];
 
 	_itemWeaponHighCapAmmo =
@@ -2368,6 +2389,16 @@ private _itemWeaponCQB =
 
     "CUP_smg_EVO",
 
+	"JCA_smg_UMP_black_F",
+	"JCA_smg_UMP_AFG_black_F",
+	"JCA_smg_UMP_VFG_black_F",
+	"JCA_smg_UMP_olive_F",
+	"JCA_smg_UMP_AFG_olive_F",
+	"JCA_smg_UMP_VFG_olive_F",
+	"JCA_smg_UMP_sand_F",
+	"JCA_smg_UMP_AFG_sand_F",
+	"JCA_smg_UMP_VFG_sand_F",
+
     "rhs_weap_pp2000",
     "rhsusf_weap_MP7A2",
 
@@ -2403,19 +2434,27 @@ private _itemWeaponCQB =
     "CUP_30Rnd_45ACP_M3A1_BLK_M",
 	"CUP_30Rnd_9x19_EVO",
 
+	"JCA_25Rnd_45ACP_UMP_Mag",
+	"JCA_25Rnd_45ACP_UMP_Sand_Mag",
+	"JCA_25Rnd_45ACP_UMP_IR_Mag",
+	"JCA_25Rnd_45ACP_UMP_IR_Sand_Mag",
+
     "rhs_mag_9x19mm_7n21_20",
     "rhs_mag_9x19mm_7n21_44",
 
     //Shotguns
+    "ACE_6Rnd_12Gauge_Pellets_No0_Buck",
+	"6Rnd_12Gauge_Slug",
+	"6Rnd_12Gauge_Pellets",
+
     "CUP_5Rnd_B_Saiga12_Buck_00",
     "CUP_5Rnd_B_Saiga12_Slug",
     "CUP_12Rnd_B_Saiga12_Buck_00",
     "CUP_12Rnd_B_Saiga12_Slug",
     "CUP_8Rnd_12Gauge_Pellets_No00_Buck",
     "CUP_8Rnd_12Gauge_Slug",
-    "ACE_6Rnd_12Gauge_Pellets_No0_Buck",
-	"6Rnd_12Gauge_Slug",
-	"6Rnd_12Gauge_Pellets",
+	"CUP_6Rnd_12Gauge_Pellets_No00_Buck",
+	"CUP_6Rnd_12Gauge_Slug",
 
     "rhsusf_8Rnd_00Buck",
     "rhsusf_5Rnd_00Buck",
@@ -2636,6 +2675,7 @@ private _itemSniper =
 	//sling for defense
 	"tsp_sling",
 	"tsp_sling_1point",
+	"tsp_sling_3point",
 	"tsp_sling_lanyard",
 
     // "optic_AMS", // marksman dlc
@@ -2747,6 +2787,7 @@ private _itemWeaponGL =
 	"CUP_glaunch_M79",
 	"tsp_sling",
 	"tsp_sling_1point",
+	"tsp_sling_3point",
 	"tsp_sling_lanyard",
 
 	//5.56x45mm
@@ -2864,6 +2905,12 @@ private _itemWeaponGL =
     "1Rnd_SmokeRed_Grenade_shell",
     "1Rnd_SmokeBlue_Grenade_shell",
     "1Rnd_SmokeGreen_Grenade_shell",
+    "1Rnd_SmokeOrange_Grenade_shell",
+    "1Rnd_SmokePurple_Grenade_shell",
+    "1Rnd_SmokeYellow_Grenade_shell",
+
+	"mjb_1Rnd_SmonkLightBlue",
+	"mjb_1Rnd_SmonkPink",
 
 	"mjb_1Rnd_impactSmonk",
 	"mjb_1Rnd_impactSmonkBlue",
@@ -2872,6 +2919,8 @@ private _itemWeaponGL =
 	"mjb_1Rnd_impactSmonkPurple",
 	"mjb_1Rnd_impactSmonkRed",
 	"mjb_1Rnd_impactSmonkYellow",
+	"mjb_1Rnd_impactSmonkLightBlue",
+	"mjb_1Rnd_impactSmonkPink",
 
 	"CUP_1Rnd_HEDP_M203",
 	"rhs_mag_M433_HEDP",
@@ -3964,6 +4013,8 @@ switch (true) do
     {
         [arsenal, true] call ace_arsenal_fnc_initBox;
     };
+    
+    
     default
     {
         [arsenal, (_itemEquipment + _itemFacewear + _itemMod + _itemReflexSight + _itemWeaponCQB +  _itemWeaponRifle + _itemWeaponCarbine + _itemWeaponPistol + _itemWeaponAmmo + _itemWeaponTracerAmmo + _tarkovuniforms + _itemWeaponGL)] call ace_arsenal_fnc_initBox;
