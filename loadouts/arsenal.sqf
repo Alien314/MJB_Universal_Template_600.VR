@@ -149,6 +149,34 @@ private _itemEquipment =
 	"CUP_V_CPC_tlbelt_rngr",
 	"CUP_V_CPC_weaponsbelt_rngr",
 
+    // PLA Vests
+    "PLA_Arid_V_CPC_communicationsbelt",
+    "PLA_Arid_V_CPC_Fastbelt",
+    "PLA_Arid_V_CPC_lightbelt",
+    "PLA_Arid_V_CPC_medicalbelt",
+    "PLA_Arid_V_CPC_tlbelt",
+    "PLA_Arid_V_CPC_weaponsbelt",
+    "PLA_Arid_V_CPC_communications",
+    "PLA_Arid_V_CPC_Fast",
+    "PLA_Arid_V_CPC_light",
+    "PLA_Arid_V_CPC_medical",
+    "PLA_Arid_V_CPC_tl",
+    "PLA_Arid_V_CPC_weapons",
+    "PLA_V_CPC_communicationsbelt",
+    "PLA_V_CPC_Fastbelt",
+    "PLA_V_CPC_lightbelt",
+    "PLA_V_CPC_medicalbelt",
+    "PLA_V_CPC_tlbelt",
+    "PLA_V_CPC_weaponsbelt",
+    "PLA_V_CPC_communications",
+    "PLA_V_CPC_Fast",
+    "PLA_V_CPC_light",
+    "PLA_V_CPC_medical",
+    "PLA_V_CPC_tl",
+    "PLA_V_CPC_weapons",
+    "PLA_Vest_Rifleman_Arid",
+    "PLA_Vest_Rifleman_Wood",
+
 	//Tarkov Vests
     "Gjel_vest",
     "GjelBlackRock_vest",
@@ -428,6 +456,30 @@ private _itemEquipment =
     "CUP_H_OpsCore_Covered_Tigerstripe_SF",
     "CUP_H_OpsCore_Covered_UCP_SF",
 
+    // PLA Helmets
+    "PLA_HelmetCCH_cover_Arid_NoHS_F",
+    "PLA_HelmetCCH_cover_Arid_F",
+    "PLA_HelmetCCH_Cover_Wood_NoHS_F",
+    "PLA_HelmetCCH_Cover_Wood_F",
+    "PLA_H_Arid_Helmet01",
+    "PLA_H_Arid_Helmet02",
+    "PLA_H_Helmet01_Navy",
+    "PLA_H_Helmet02_Navy",
+    "PLA_H_Helmet01",
+    "PLA_H_Helmet02",
+    "PLA_Opscore_blk",
+    "PLA_Arid_Opscore_No_Headset",
+    "PLA_Opscore_No_Headset_Navy",
+    "PLA_Opscore_No_Headset",
+    "PLA_Arid_Opscore",
+    "PLA_Opscore_Navy",
+    "PLA_Opscore",
+    "PLA_Opscore_HS_blk",
+    "PLA_Opscore_HS_oli",
+    "PLA_Opscore_HS_snd",
+    "PLA_Opscore_oli",
+    "PLA_Opscore_snd",
+
     //============================================================
     //ACRE radio
     //============================================================
@@ -514,6 +566,14 @@ private _itemUniforms = [
     "JCA_U_NBCD_Suit_01_hood_olive_F",
     "JCA_U_NBCD_Suit_01_sand_F",
     "JCA_U_NBCD_Suit_01_hood_sand_F",
+
+    // PLA Uniforms
+    "PLA_Combat_Uniform_Arid",
+    "PLA_Combat_Uniform_Rolled_Arid",
+    "PLA_Combat_Uniform_Navy",
+    "PLA_Combat_Uniform_Rolled_Navy",
+    "PLA_Combat_Uniform",
+    "PLA_Combat_Uniform_Rolled",
 
 	// Various CUP Uniforms
 	"CUP_U_B_USMC_MCCUU_des_pads_gloves",
@@ -877,6 +937,12 @@ private _itemHats = [
     "H_Booniehat_mcamo",
     "H_Booniehat_eaf",
 
+    //PLA Boonies
+    "PLA_Boonie_Arid",
+    "PLA_Boonie_Arid_hs",
+    "PLA_Boonie_Wood",
+    "PLA_Boonie_Wood_hs",
+
     //CUP Boonies
     "CUP_H_FR_BoonieWDL",
     "CUP_H_USA_Boonie_wdl",
@@ -926,6 +992,11 @@ private _itemHats = [
     "rhsusf_bowman_cap",
     "mjb_H_Cap_Voin",
     "CUP_H_PMC_PRR_Headset",
+
+    // PLA Hats
+    "PLA_Arid_Patrol_cap",
+    "PLA_Patrol_cap_Navy",
+    "PLA_Patrol_cap",
 
     // blyat
     "rhs_ushanka",
@@ -1005,6 +1076,7 @@ private _itemWeaponMelee =
 ];
 _itemEquipment append _itemWeaponMelee;
 
+// Assault Packs are 16 lbs
 private _itemPackLight = [
 	//============================================================
     //Backpacks
@@ -1019,10 +1091,17 @@ private _itemPackLight = [
 	"B_AssaultPack_dgtl",
     "B_AssaultPack_tna_F",
 	"B_AssaultPack_ocamo",
-	"B_AssaultPack_sgg"
+	"B_AssaultPack_sgg",
+
+    //PLA Small Bags
+    "PLA_Arid_Backpack_Compact",
+    "PLA_Backpack_Compact_Navy",
+    "PLA_Backpack_Compact"
 ];
 _itemEquipment append _itemPackLight;
 
+
+// Kitbags are 28 lbs
 private _itemPackMedLight =
 [
     "B_FieldPack_oucamo",
@@ -1101,7 +1180,7 @@ private _itemPackHeavy =
 ];
 _itemPackHeavy append _itemPackMedium;
 
-private _itemFacewear = (("getNumber (_x >> 'scope') isEqualTo 2" configClasses (configFile >> "CfgGlasses") apply {configName _x})- ['G_Armband_Cross_F','G_Armband_Cross_alt_F']);
+private _itemFacewear = (("getNumber (_x >> 'scope') isEqualTo 2" configClasses (configFile >> "CfgGlasses") apply {configName _x})- ['G_Armband_Cross_F','G_Armband_Cross_alt_F'] + ["PLA_NV_Goggles_F", "PLA_NV_Glasses_F"]);
 /*private _itemFacewear =
 [
     //Vanilla
@@ -1248,6 +1327,8 @@ private _itemMod =
     "JCA_optic_MROS_sand_magnifier",
 
 	//MCC 3x
+    "MCC_MicroT2_Spuhr_BLK_Down",
+
     "MCC_EXPS3_BLK_Up",
     "MCC_EXPS3_FDE_Down",
 	"MCC_EXPS3_UnityX_BLK_Up",
@@ -1546,7 +1627,13 @@ private _itemReflexSight =
     "rhsusf_acc_t1_low_fwd",
 
     //MCC
-	"MCC_EXPS3_BLK",
+	"MCC_MicroT2_Spuhr_BLK",
+    "MCC_Aimpoint_Pro_S_FC",
+    "MCC_Aimpoint_Pro_S",
+    "MCC_Aimpoint_Pro_T_FC",
+    "MCC_Aimpoint_Pro_T",
+
+    "MCC_EXPS3_BLK",
 	"MCC_EXPS3_FDE",
     "MCC_EXPS3_UnityX_BLK",
     "MCC_EXPS3_UnityX_FDE",
@@ -1559,7 +1646,8 @@ private _itemReflexSight =
 	"MCC_GBRS_EXPS3_FDE",
 	"MCC_Romeo9t_blk",
     "MCC_Romeo9t_fde",
-
+    
+    //Tier1
     "Tier1_EXPS3_0_Tano",
     "tier1_romeo4t_bcd_black",
     "tier1_romeo4t_bcd_riser_black",
@@ -1594,6 +1682,8 @@ private _itemWeaponPistol =
     "CUP_hgun_TT",
     "hgun_Rook40_F",
 
+    "Flex_CUP_PLA_HGun_QSZ92",
+
     "rhs_weap_pya",
     "Tier1_P320",
 
@@ -1611,6 +1701,8 @@ private _itemWeaponPistol =
     "CUP_17Rnd_9x19_glock17",
     "CUP_8Rnd_762x25_TT",
     "16Rnd_9x21_Mag",
+    
+    "mjb_20rnd_58x21_mag",
 
     "rhs_mag_9x19_17",
 
@@ -1623,6 +1715,7 @@ private _itemWeaponPistol =
     "greenmag_ammo_45ACP_basic_30Rnd",
     "greenmag_ammo_9x18_basic_30Rnd",
     "greenmag_ammo_762x25_ball_30Rnd",
+	"greenmag_ammo_570x28_basic_30Rnd",
 
     //Attachments
     "optic_mrd_black",
@@ -1799,6 +1892,11 @@ private _itemWeaponRifle =
     "CUP_arifle_AK101",
     "CUP_arifle_AK101_railed",
 
+    // PLA Rifles
+    "Flex_CUP_PLA_ARifle_QBZ95_blk",
+    "Flex_CUP_PLA_ARifle_QBZ95_RIS_blk",
+    "Flex_CUP_PLA_ARifle_QBZ95_RIS_FG_blk",
+
     "rhs_weap_vhsd2",
     "rhs_weap_vhsd2_ct15x",
 
@@ -1906,7 +2004,20 @@ private _itemWeaponRifle =
 	//============================================================
 	// MCC 5.56, 5.45, 7.62x39
 	//============================================================
-	"MCC_KS1_FDE_CTR",
+	"MCC_M4A1_556_USGI_145_CTR",
+    "MCC_M4A1_556_USGI_145_Bravo",
+    "MCC_M4A1_556_USGI_145_Bravo",
+    "MCC_M4A1_556_RAS_145_CTR",
+    "MCC_M4A1_556_RAS_145_Bravo",
+    "MCC_M4A1_556_RAS_145_M4SS",
+    "MCC_MK18_556_RAS_103_CTR",
+    "MCC_MK18_556_RAS_103_Bravo",
+    "MCC_MK18_556_RAS_103_M4SS",
+    "MCC_MK18_FS_556_RAS_103_CTR",
+    "MCC_MK18_FS_556_RAS_103_Bravo",
+    "MCC_MK18_FS_556_RAS_103_M4SS",
+    
+    "MCC_KS1_FDE_CTR",
 	"MCC_KS1_FDE_Bravo",
 	"MCC_KS1_FDE_SLK",
 	"MCC_KS1_BLK_CTR",
@@ -2251,6 +2362,7 @@ private _itemWeaponAmmo =
 
     //Loose ammo
     "greenmag_ammo_556x45_basic_60Rnd",
+	"greenmag_ammo_556x45_basic_30Rnd",
 
     //============================================================
     //5.45x39mm
@@ -2262,6 +2374,7 @@ private _itemWeaponAmmo =
 
     //Loose ammo
     "greenmag_ammo_545x39_basic_60Rnd",
+    "greenmag_ammo_545x39_basic_30Rnd",
 
     //============================================================
     //5.8x42mm
@@ -2271,6 +2384,7 @@ private _itemWeaponAmmo =
 
 	// loose ammo
 	"greenmag_ammo_580x42_basic_60Rnd",
+	"greenmag_ammo_580x42_basic_30Rnd",
 
 
     //============================================================
@@ -2286,6 +2400,7 @@ private _itemWeaponAmmo =
 
     //Loose ammo
     "greenmag_ammo_762x39_basic_60Rnd",
+    "greenmag_ammo_762x39_basic_30Rnd",
 
     //============================================================
     //7.62x51mm
@@ -2301,6 +2416,7 @@ private _itemWeaponAmmo =
 
     //Loose ammo
     "greenmag_ammo_762x51_basic_60Rnd",
+    "greenmag_ammo_762x51_basic_30Rnd",
 
     //============================================================
     //7.62x54mm
@@ -2308,6 +2424,7 @@ private _itemWeaponAmmo =
     //Magazines
     //Loose ammo
     "greenmag_ammo_762x54_basic_60Rnd",
+    "greenmag_ammo_762x54_basic_30Rnd",
 
     //============================================================
     //Grenades
@@ -2476,6 +2593,7 @@ if (_tracer isEqualTo 'red') then {
 
 		//Loose ammo
         "greenmag_ammo_580x42_basic_60Rnd",
+        "greenmag_ammo_580x42_basic_30Rnd",
 
 		//============================================================
 		//7.62x51mm
@@ -2649,6 +2767,7 @@ if (_tracer isEqualTo 'red') then {
 
 		//Loose ammo
         "greenmag_ammo_580x42_basic_60Rnd",
+        "greenmag_ammo_580x42_basic_30Rnd",
 
 		//============================================================
 		//7.62x51mm
@@ -2790,9 +2909,13 @@ private _itemWeaponCQB =
     //Loose ammo
     //============================================================
     "greenmag_ammo_46x30_basic_60Rnd",
+    "greenmag_ammo_46x30_basic_30Rnd",
     "greenmag_ammo_570x28_basic_60Rnd",
+    "greenmag_ammo_570x28_basic_30Rnd",
     "greenmag_ammo_765x17_basic_60Rnd",
+    "greenmag_ammo_765x17_basic_30Rnd",
     "greenmag_ammo_9x39_ball_60Rnd",
+    "greenmag_ammo_9x39_ball_30Rnd",
     "greenmag_ammo_45ACP_basic_60Rnd",
     "greenmag_ammo_9x18_basic_60Rnd",
     "greenmag_ammo_9x19_basic_60Rnd",
@@ -2848,6 +2971,12 @@ private _itemWeaponAR =
     "CUP_arifle_RPK74_45",
 
     "rhs_weap_rpk74m",
+
+    //============================================================
+    //5.8x42mm
+    //============================================================
+    "Flex_CUP_PLA_ARifle_QJB95_blk",
+    "Flex_CUP_PLA_ARifle_QJB95_RIS_blk",
 
     //============================================================
     //7.62x39mm
@@ -3099,6 +3228,8 @@ private _itemSniperAmmo = [
     "greenmag_ammo_338_basic_30Rnd",
     "greenmag_ammo_338_basic_60Rnd",
     "greenmag_ammo_46x30_basic_60Rnd",
+    "greenmag_ammo_46x30_basic_30Rnd",
+    "greenmag_ammo_93x64_basic_30Rnd",
     "greenmag_ammo_93x64_basic_60Rnd"
 ];
 
@@ -3187,6 +3318,10 @@ private _itemWeaponGL =
 
     "rhs_weap_ak74m_gp25",
 
+	//5.8x42mm
+    "Flex_CUP_PLA_ARifle_QBZ95_GL_blk",
+    "Flex_CUP_PLA_ARifle_QBZ95_RIS_GL_blk",
+
     //7.62x39mm
     "CUP_arifle_OTS14_GROZA_762_GL",
     "CUP_arifle_Sa58RIS2_gl",
@@ -3221,10 +3356,11 @@ private _itemWeaponGL =
     "CUP_30Rnd_TE1_Green_Tracer_762x39_AK15_Tan_M",
     "CUP_30Rnd_556x45_TE1_Tracer_Green_AK19_Tan_M",*///only green
 	"CUP_30Rnd_556x45_AK19_Tan_M",
-    "CUP_30Rnd_680x43_Stanag_Tracer_Red",
-    "CUP_30Rnd_680x43_Stanag_Tracer_Yellow",
+    //"CUP_30Rnd_680x43_Stanag_Tracer_Red",
+    //"CUP_30Rnd_680x43_Stanag_Tracer_Yellow",
 
-    "greenmag_ammo_680x43_tracer_60Rnd",
+    //"greenmag_ammo_680x43_tracer_60Rnd",
+    //"greenmag_ammo_680x43_tracer_30Rnd",
 
     //============================================================
     //Grenade Rounds
@@ -3743,6 +3879,7 @@ private _itemTankCrew =
     "Tier1_EXPS3_0_Black",
     "Tier1_Larue_FUG_Black"
 ];
+_itemTankCrew append _itemEquipment;
 _itemTankCrew append _itemHats;
 _itemTankCrew append _itemNVG;
 _itemTankCrew append _itemWeaponMelee;
@@ -4038,7 +4175,10 @@ if (_hasContact) then {
 		"JCA_V_CarrierRigKBT_01_light_MTP_woodland_F",
 		"JCA_V_CarrierRigKBT_01_light_black_F",
 		"JCA_V_CarrierRigKBT_01_light_olive_F",
-		"JCA_V_CarrierRigKBT_01_light_sand_F"
+		"JCA_V_CarrierRigKBT_01_light_sand_F",
+
+		"PLA_V_CarrierRigKBT_01_light_Navy_F",
+		"PLA_V_CarrierRigKBT_01_heavy_Navy_F"
     ];} forEach [_itemEquipment,_itemTankCrew,_itemHeloCrew];
 
     _itemWeaponRifle append [
@@ -4146,7 +4286,16 @@ if (_hasMarksmen) then {
         "bipod_02_F_tan"
     ];
 
-    _itemSniper pushBack "optic_AMS";
+    _itemSniper append [
+		"optic_AMS",
+		"U_B_FullGhillie_lsh",
+		"U_B_FullGhillie_sard",
+		"U_B_T_FullGhillie_tna_F",
+		"U_B_FullGhillie_ard",
+		"U_I_FullGhillie_ard",
+		"U_I_FullGhillie_lsh",
+		"U_I_FullGhillie_sard"
+	];
 };
 
 //Add Existing Player Items
